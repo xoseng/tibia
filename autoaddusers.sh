@@ -5,11 +5,11 @@
 # Require root for running the script
 if [ "`id -u`" != 0 ] ; 
 	then
-		echo -e "\n"
+	  echo -e "\n"
 	  clear
-		echo "It requires root to run the script."
+	  echo "It requires root to run the script."
 	  echo "Press any key to continue..."
-		read a
+          read a
 	  clear
 	  exit 1
 fi
@@ -20,12 +20,12 @@ if [ -f $userfile ]
     then 
         echo "Loading File..."
     else
-		  echo "File not found!"
-		  echo "Make sure the path <$userfile> is correct and try again!"
-		  echo "Press any key to continue..."
-	    read a
-      clear
-	    exit 1
+	echo "File not found!"
+	echo "Make sure the path <$userfile> is correct and try again!"
+	echo "Press any key to continue..."
+	read a
+      	clear
+	exit 1
 fi
 echo "Creating users, please wait a moment!"
 # Filter options configuration
