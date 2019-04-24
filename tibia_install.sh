@@ -4,7 +4,7 @@
 # WARNING: Comment with # the last line if you want don't delete this script
 if [ "`id -u`" != 0 ] ;
         then
-                echo -e "\n"
+            echo -e "\n"
             clear
             echo "Tibia installer created by Xose."
             echo "It requires root to run the script."
